@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Signika:wght@300&display=swap');
+
+.dark-mode{
+    background-color:#171717 ;
+    color: white;
+}
+.refresh{
+  border-radius: 50%;
+ width: 50px;
+ height: 50px;
+}
+td{
+    color: #171717;
+    font-weight: bold;
+}
+th{
+    font-size: 1.4rem;
+}
+
+.imgDark{
+  filter: invert(1);
+}
+.table{
+    background-color: #171717;
+    color: white;
+    margin: 5%;
+    width: 50%;
+    visibility: hidden;
+    font-family: 'Signika', sans-serif;
+  }
+   .vaccine{
+    width: 250px;
+  }
+ 
+  header{
+    padding: 4%;
+    font-family: 'Alfa Slab One', cursive;
+  }
+  .remove{
+    visibility: hidden;
+  }
+  .shifting{
+      visibility: visible;
+position: absolute;
+top: 50%;
+left: 20%;
+  }
+@media(max-width:600px){
+  .table{
+   font-size: small;
+   transform: translateX(-20%);
+  }}
+@media(max-width:550px){  
+  .cowinInput label:first-child{
+    transform: translateX(-100px) translateY(25px);
+
+  }
+  .cowinInput label{
+    transform: translateX(100px);
+
+  }}
+
+.pincode , .date {
+padding: 1%;
+border: 1.2px solid ;
+font-weight: 500;
+margin-left: 2%;
+margin-right: 2%;
+}
+.cowinInput label{
+  font-size: large;
+  font-weight: 600;
+  margin-left:100px ;
+  margin-right:100px ;
+}
+.toogles{
+  display: inline;
+  position: relative;
+  left: -150px;
+}
+.submit ,.refresh{
+  display: inline;
+  position: relative;
+left: 200px;
+margin-top: 20px;
+margin-right: 8px;
+}
+.fa-redo:hover{
+animation: spin 1.4s infinite;
+}
+@keyframes spin{
+  from{
+   transform: rotate(-270deg);
+   }
+  to{
+    transform: rotate(270deg);
+  }
+}
+.paymentFree:checked ,
+.paymentFree:active ,
+.paymentPaid:checked ,
+.paymentPaid:active{
+background-color: rgb(5, 136, 92);
+
+}
