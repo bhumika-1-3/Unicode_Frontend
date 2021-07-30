@@ -2,11 +2,11 @@
 
 ## Following components were used: 
 
--HTML
--CSS
--Javascript
--jQuery
--Bootstrap
+- HTML
+- CSS
+- Javascript
+- jQuery
+- Bootstrap
 
 
  
