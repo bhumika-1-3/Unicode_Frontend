@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* .star:hover{
+background-color: yellow;
+}
+.star:active{
+  background-color: yellow;
+
+} */
+
+.contact{
+  color: white;
+  /* background-image: linear-gradient(135deg,#FD2DA2,#FF1722); */
+  background-image: linear-gradient(135deg,#6FC3F7,#1813A2);
+  /* width: max-content; */
+  border-radius: 30px;
+  margin: 40px;
+}
+.contact:hover{
+  background-image: linear-gradient(135deg,#FD2DA2,#FF1722);
+
+}
+img{
+  position: relative;
+  top: 30px;
+  left: 20px;
+width: 90px;
+border-radius: 50%;
+background-color: white;
+}
+
+.mainContact{
+  padding:0% 26%;
+}
+.contact h2,.contact p{
+  position: relative;
+  left: 30%;
+  top:-50px;
+}
+.contact p{
+  opacity: .7;
+}
