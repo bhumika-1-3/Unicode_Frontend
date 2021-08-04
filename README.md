@@ -16,4 +16,4 @@
 
 ### Third Task (Vaccine Tracker)
 
-### Bonus task (contatc directory)
+### Bonus task (contact directory)
