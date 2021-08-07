@@ -1,0 +1,263 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* heading */
+header{
+    color: rgb(2, 0, 0);
+    font-weight: 800;
+    font-style: oblique;
+}
+
+
+/* main form */
+form{ 
+    background-color: #22B07D;
+    padding-left: 3%;
+    text-align: left;
+    width: 70%;
+    height: 350px;
+    /* background-color: black; */
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+form input ,form button{
+    margin: 1%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+}
+.listInput{
+  width: 80%;
+}
+
+.listing{
+padding-top: 3%;
+font-size: 1.3rem;
+text-align: left;
+padding-left: 4%;
+}
+.remove-button,
+.add-button ,
+ .edit-button 
+    {position: relative;
+    top: -60px;
+    float: right;
+    left: -20px;
+    margin: 1px;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 12%;
+}
+.todo{
+    transition: all .4s ease;
+background-color: rgb(33,37,41);    
+height: 10rem;
+padding-bottom: 5%;
+border-bottom:1px solid white;
+}
+
+.fa-trash-alt ,.fa-check,.fa-user-edit{
+    pointer-events: none;
+}
+.theList{
+    width: 70%;
+    background-color: white;
+    padding-top: 0px;
+}
+.overallTime{
+  color: rgb(0, 0, 0);
+  opacity: 0.8;
+  text-align: right;
+  position: relative;
+  top: -30px;
+  padding-right: 2%;
+  font-weight: 800;
+  text-decoration: underline;
+}
+.completed{
+  opacity: .5;
+    text-decoration: line-through;
+    transition:all .8s ease;
+    background-color: black;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+
+}
+.compulsory{
+  color: black;
+    background-color: #D54C4C;
+}
+
+ .listInputButton{
+  /* margin-top: 5%; */
+   /* margin-left: -1%; */
+   /* border: none; */
+     /* position: absolute; */
+     /* left: 65%; */
+     /* top: 35%; */
+     box-shadow:0px 4px rgba(0, 0, 0, 0.342) ;
+ }
+ .listInputButton:hover{
+   color: #22B07D;
+   transition: all .7s ease;
+ }
+ .listInputButton:active{
+   transition: all .3s ease-in;
+   transform: translateY(2px);
+   border: none;
+ }
+ .listing ,.listingTimeDate{
+   list-style-type: none;
+   color: white;
+ }
+ .fa-check{
+     background-color: #22B07D;
+ }
+ .fa-trash-alt{
+color:rgb(33,37,41);    
+ }
+ .todo:hover {
+opacity: 0.9; }
+
+.timingDate{
+   opacity: .5;
+   font-size: 1rem;
+   text-align: left;
+}
+
+
+
+ /* toogle switch */
+.switch {
+    margin-left: 80%;
+    position: relative;
+    top: -170px;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    top: 2px;
+    /* bottom: -2px; */
+    background-color: rgb(12, 11, 11);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FAFF00;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #FAFF00;
+  }
+  
+  input:checked + .slider:before {
+       transform: translateX(23px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .toogleText{
+    /* justify-content: center; */
+    /* align-items: center; */
+    transform: translateX(5px);
+    text-align: right;
+    position: relative;
+    left: -30px;
+    top: -170px;
+    color: #D54C4C;
+    opacity: .8;
+  }
+  .afterToogleList{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+.afterToogle{
+  color: black;
+}
+  
+  @media(max-width:600px){
+
+    form,.theList{
+      width: 400px;
+    }
+    form input{
+      height: 1.5rem;}
+    form{
+      height:250px;
+   }
+    .add-button,.remove-button,.edit-button{
+      margin-left: -10px;
+      transform: scale(.8);
+    }
+   
+.listInputButton{
+transform: scale(.7);
+}
+form{
+  height: 16rem;
+  width: 20rem;
+}
+.theList{
+  width: 20rem;
+}
+  }
+
+.change{
+    text-decoration: none;
+    color: white;
+    }
+.change:active, .change:hover{
+        color: #22B07D;
+    }
+
+    .opacity{
+      opacity: .5;
+    }
+label{
+  font-size: 1.3rem;
+  font-weight: 700;
+}    

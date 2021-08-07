@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500&family=Gentium+Basic:wght@400;700&family=Lexend+Deca&display=swap');
+body{
+  min-width: 500px;
+  background-repeat: no-repeat;
+}
+.exp{
+  opacity: 1;
+  font-family: 'Lobster', cursive;
+  font-size: 3.5rem;
+  z-index: 1;
+}
+.front{
+background-image: url(https://thumbs.dreamstime.com/b/business-candle-stick-graph-chart-stock-market-investment-trading-white-background-design-bullish-point-forex-business-179284863.jpg);
+}
+
+table{
+    font-size: large;
+    text-align: center;
+    padding-top: 3%;
+}
+
+
+.incomeSaving{
+  display:block;
+    padding-top: 5%;
+  font-family: 'Lexend Deca', sans-serif;
+  /* float: right; */
+}
+input[type="text"] , input[type="number"]{
+    height: 2.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btnChange{
+ cursor: pointer;
+text-decoration: none;
+color: white;
+}
+.btnChange:active, .btnChange:hover{
+    color: #22B07D;
+}
+.completed{
+    opacity: .5;
+      text-decoration: line-through;
+      transition:all 1s ease;
+  }
+  
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+transition: all 1s ease-in-out;
+}
+
+
+
+
+/* display the amounts */
+.container {
+    margin: 30px auto;
+    width: 350px;
+  }
+  h1 {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .containerInside{
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(250, 250, 250, 0.2),
+                0 1px 5px rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .containerInside > div {
+    flex: 1;
+    text-align: center;
+  }
+  .containerInside > div:first-of-type {
+    border-right: 1px solid black;
+  }
+  .money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  .money.plus {
+    color: forestgreen;
+  }
+  .money.minus {
+    color: crimson;
+  }
+
+
+  .inputTheValues{
+  position: relative;
+  padding-bottom: 1%;
+  } 
+
+  .income ,.saving{
+      width: 10%;
+       }
+
+ .data{
+     font-family:sans-serif ;
+     font-weight: 800;
+   
+    }
+     
+ .submitIS{
+   transform: translateY(-3px);
+   color: white;
+   font-weight: 700;
+ }
+
+ @media(max-width:600px){
+   .income,.saving{
+     width: 75px;
+   }
+   
+  
+  .submitIS{
+    width: 14%;
+    font-size: .8rem;
+  }
+ }
+
+ @media(max-width:1000px){
+   table{
+     transform: scale(.9) ;}
+   tr td input{
+    width: 100%;
+}
+   }
+ .container h2{
+   font-weight: 500;
+   text-shadow: 0px 2px rgba(0, 0, 0, 0.37);
+   color: black;
+ }
